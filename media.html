@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+/*Styling each container*/
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+    background-color: #9DC183;
+    padding: 1em;
+}
+
+.main {
+    background-color: #7FFFD4;
+}
+
+.footer {
+    background-color: #9DC183;
+    padding: 1em;
+}
+
+/*Position the side-bar and content*/
+.side-bar {
+    float: left;
+    width: 25%;
+}
+
+/*Keep the footer at the bottom*/
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}
+
+/*Add some space around the edges*/
+.side-bar {
+    /*other properties*/
+    padding: 1em;
+    border: 3px solid #ff7fa9;
+    border-radius: 0.5em;
+    text-align: left ;
+}
+
+.content {
+    /*other properties*/
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+/*Making it responsive*/
+@media (min-width: 800px) {
+    .side-bar {
+        float: left;
+        width: 25%;
+    }
+}
+
+/* The main difference between @media (min-width) and @media (max-width) is the 
+condition when the styles will be applied. @media (min-width: 800px) { … } is for 
+browser’s viewport width equal or wider than 800px. @media (max-width: 800px) 
+{ … } is for browser’s viewport width equal or narrower than 800px1.*/
+@media (max-width: 400px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: orange;
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Main heading</h1>
+            <ul class="menu">
+                <li><a href="#">Menu item 1</a></li>
+                <li><a href="#">Menu item 1</a></li>
+                <li><a href="#">Menu item 1</a></li>
+            </ul>
+        </div>
+        <div class="main clearfix">
+            <div class="side-bar">
+                <h2>Side bar</h2>
+                <!--this is the side bar-->
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus beatae quibusdam sed quasi quia laborum numquam nesciunt impedit alias, dolore ad fuga, deleniti assumenda corrupti? Cupiditate molestiae ullam earum quasi?
+            </div>
+            <div class="content">
+                <h2>Main content</h2>
+                <!--this is the main content-->
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptas aut nulla nihil fuga non velit. Saepe ipsa dolore doloremque maxime, illum aut vitae, provident maiores minima aperiam blanditiis odit!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero corrupti distinctio porro saepe! Repellat quidem in, maiores inventore eius velit explicabo nostrum! Est nemo culpa sapiente deserunt vel, iure atque!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet suscipit itaque optio iste reiciendis veritatis commodi eos? Exercitationem quisquam placeat recusandae voluptatum sunt quaerat rerum libero facilis ducimus deserunt. Aspernatur?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde quibusdam recusandae error accusamus dolore blanditiis voluptate perspiciatis quod quisquam! Corrupti assumenda repellat non nemo commodi deserunt quam, excepturi consequatur tempora!
+            </div>
+        </div>
+        <div class="footer">
+            <h4>@footer inc</h4>
+        </div>
+    </div>
+
+</body>
+</html>
